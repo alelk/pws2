@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/view_horizontal_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#22ffffff" />
+
+    <TextView
+        android:id="@+id/txt_search_psalm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:text="@string/lbl_search_psalm"
+        android:textAppearance="?textAppearanceTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view_horizontal_line" />
+
+    <Button
+        android:id="@+id/btn_search_psalm_number"
+        style="?attr/buttonBarStyle"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:drawableTop="?attr/toolbarSearchByNumberIcon"
+        android:fitsSystemWindows="true"
+        android:padding="16dp"
+        android:text="@string/lbl_search_by_number"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toStartOf="@+id/btn_search_psalm_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_search_psalm" />
+
+    <Button
+        android:id="@+id/btn_search_psalm_text"
+        style="?attr/buttonBarStyle"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:drawableTop="?attr/toolbarSearchByTextIcon"
+        android:padding="16dp"
+        android:text="@string/lbl_search_by_text"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_search_psalm_number"
+        app:layout_constraintTop_toBottomOf="@+id/txt_search_psalm" />
+
+</android.support.constraint.ConstraintLayout>
